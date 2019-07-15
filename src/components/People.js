@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import PeopleList from './PeopleList';
+import Planet from './Planet';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 class People extends Component {
   constructor() {
@@ -7,13 +9,11 @@ class People extends Component {
   }
 
   render() {
-    return (<>
-      <div className="people-header">
-        <label><h2>People</h2></label>
-        <button className="enable-offline">Enable Offline</button>
-      </div>
-      <PeopleList />
-      </>);
+    return (<Router>
+        <Route path="/" exact component={PeopleList} />
+        <Route path="/people" component={PeopleList} />
+        <Route path="/planet/:planetId" component={Planet} />
+      </Router>);
   }
 }
 

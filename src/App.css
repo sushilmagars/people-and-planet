@@ -1,13 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 .people-header {
   display: flex;
   padding: 25px;
   background-color: #b6b9bf;
+  text-align: center;
 }
 
 .people-header label {
@@ -26,3 +26,33 @@
   background-color: powderblue;
 }
 
+.people-container {
+  display: flex;
+}
+
+.sidebar {
+  padding: 10px;
+  flex: 1;
+}
+
+.people-information {
+  flex: 9;
+  padding: 10px;
+}
+
+.people-information div {
+  padding: 10px;
+}
+
+.sidebar input {
+  height: 16px;
+  border-radius: 5px;
+}
+
+.people-list-item {
+  list-style-type: none;
+}
+
+.people-list-item li {
+  padding: 5px;
+}
