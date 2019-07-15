@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.people-header {
+  display: flex;
+  padding: 25px;
+  background-color: #b6b9bf;
+}
+
+.people-header label {
+  flex: 9;
+}
+
+.enable-offline {
+  flex: 1;
+  border-radius: 1px;
+  padding: 5px;
+  outline: none;
+  box-shadow: 4px 4px;
+}
+
+.enable-offline:hover {
+  background-color: powderblue;
+}
+
