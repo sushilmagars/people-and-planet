@@ -17,8 +17,6 @@ function Planet({match}) {
     getPlanetInformation(planetId);
   }, []);
 
-  console.log('asdasd')
-
   return (<div>
     <div>Name: {planet.name}</div>
     <div>Rotation period: {planet.rotation_period}</div>

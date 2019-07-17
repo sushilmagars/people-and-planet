@@ -19,7 +19,7 @@ class PeopleList extends React.Component {
 
   searchList(e) {
     let filteredList = this.state.list
-      .filter(({name}) => name.toLowerCase().indexOf(e.target.value) >= 0);
+      .filter(({name}) => name.toLowerCase().indexOf(e.target.value.toLowerCase()) >= 0);
 
     if (filteredList.length >= 1) {
       return this.setState({displayFilteredList: true, filteredList});
@@ -53,7 +53,6 @@ class PeopleList extends React.Component {
 
   render() {
     const personSelected = this.state.selectedPerson[0];
-    console.log('got', personSelected);
 
     return (<React.Fragment>
       <div className="people-header">
