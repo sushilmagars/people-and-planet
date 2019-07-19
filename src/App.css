@@ -1,38 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .people-header {
   display: flex;
   padding: 25px;
-  background-color: #b6b9bf;
-  text-align: center;
-}
-
-.people-header label {
-  flex: 9;
+  justify-content: space-around;
+  align-items: center;
+  background-color: grey;
 }
 
 .enable-offline {
-  flex: 1;
-  border-radius: 1px;
-  padding: 5px;
   outline: none;
-  box-shadow: 4px 4px;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.people-header label {
+  color: white;
 }
 
 .enable-offline:hover {
-  background-color: powderblue;
+  background-color: white;
+  border-left: 5px solid grey;
+}
+
+.sidebar {
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar ul {
+  padding: 20px;
+}
+
+.sidebar input {
+  text-align: center;
+  border: 1px solid #dfe1e5;
+  outline: none;
+  border-radius: 5px;
+  padding: 30px 18px;
+  font-size: 20px;
+}
+
+.people-middle-area {
+  height: 50px;
 }
 
 .people-container {
   display: flex;
-}
-
-.sidebar {
-  padding: 10px;
-  flex: 1;
+  padding: 50px;
 }
 
 .people-information {

@@ -56,12 +56,16 @@ class PeopleList extends React.Component {
 
     return (<React.Fragment>
       <div className="people-header">
-        <label><h2>People</h2></label>
+        <label>PEOPLE</label>
         <button className="enable-offline">Enable Offline</button>
       </div>
       <div className="people-container">
         <div className="sidebar">
-          <input type="text" onChange={this.searchList}/>
+          <input 
+            type="text" 
+            placeholder="Person name e.g. Sam"
+            onChange={this.searchList}
+          />
           <ul className="people-list-item">
             {this.state.displayFilteredList ? 
               this.renderPeopleList(this.state.filteredList) :
