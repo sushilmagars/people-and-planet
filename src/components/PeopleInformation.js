@@ -19,14 +19,31 @@ function PeopleInformation(props) {
   const planetId = getPlanetId(planetHomeworld);
 
   return (<div className="people-information">
-    <div className="information-row"><label>Name: {personName}</label></div>
-    <div className="information-row"><label>Year of Birth: {personBirthYear}</label></div>
-    <div className="information-row"><label>Gender: {personGender}</label></div>
-    <div className="information-row"><label>Height: {personHeight}</label></div>
-    <div className="information-row"><label>Mass: {personMass}</label></div>
-    <Link to={`/planet/${planetId}`}>
-      <label className="planet-address">Home Planet</label>
-    </Link>
+    <div className="row">
+      <div className="people-attribute">Name</div>
+      <div className="people-attribute-detail">{personName}</div>
+    </div>
+    <div className="row">
+      <div className="people-attribute">Year of Birth</div>
+      <div className="people-attribute-detail">{personBirthYear}</div>
+    </div>
+    <div className="row">
+      <div className="people-attribute">Gender</div>
+      <div className="people-attribute-detail">{personGender}</div>
+    </div>
+    <div className="row">
+      <div className="people-attribute">Height</div>
+      <div className="people-attribute-detail">{personHeight}</div>
+    </div>
+    <div className="row">
+      <div className="people-attribute">Mass</div>
+      <div className="people-attribute-detail">{personMass}</div>
+    </div>
+    <div className="home-planet">
+      <Link to={`/planet/${planetId}`}>
+        <label className="planet-address">Home Planet</label>
+      </Link>
+      </div>
   </div>);
 }
 
