@@ -85,9 +85,7 @@ class PeopleList extends React.Component {
             planetHomeworld={personSelected.homeworld}
           /> : null}
       </div>
-      <div className="people-footer">
-        <label>People footer</label>
-      </div>
+      <div className="people-footer"></div>
     </React.Fragment>)
   }
 }

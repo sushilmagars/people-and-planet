@@ -39,7 +39,7 @@ function PeopleInformation(props) {
       <div className="people-attribute">Mass</div>
       <div className="people-attribute-detail">{personMass}</div>
     </div>
-    <div className="home-planet">
+    <div className="row home-planet">
       <Link to={`/planet/${planetId}`}>
         <label className="planet-address">Home Planet</label>
       </Link>
