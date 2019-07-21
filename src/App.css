@@ -113,3 +113,38 @@
   background-color: grey;
   border-bottom: 2px solid black;
 }
+
+.planet-information {
+  height: 100vh;
+}
+
+.planet-information .row {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.planet-attribute, .planet-attribute-detail {
+  display: inline-block;
+}
+
+.planet-attribute {
+  width: 50%;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.planet-attribute-detail {
+  width: 50%;
+  padding: 5px;
+  text-align: left;
+}
+
+.planet-attribute-detail label {
+  padding: 5px;
+}
+
+.planet-attribute-wrapper {
+  border: 1px solid black;
+  width: 25%;
+}

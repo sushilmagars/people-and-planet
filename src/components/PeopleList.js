@@ -1,5 +1,7 @@
 import React from 'react';
 import PeopleInformation from './PeopleInformation';
+import Header from './Header';
+import Footer from './Footer';
 import {getAllPeopleUrl as GETPEOPLELISTURL} from './../shared/constants';
 
 class PeopleList extends React.Component {
@@ -55,10 +57,11 @@ class PeopleList extends React.Component {
     const personSelected = this.state.selectedPerson[0];
 
     return (<React.Fragment>
-      <div className="people-header">
-        <label>People</label>
-        <button className="enable-offline">Enable Offline</button>
-      </div>
+      <Header 
+        componentClassName="people-header"
+        headerLabel="People"
+        displayEnableOfflineOption={true}
+      />
       <div className="people-container">
         <div className="sidebar">
           <div className="search-bar">
@@ -85,7 +88,6 @@ class PeopleList extends React.Component {
             planetHomeworld={personSelected.homeworld}
           /> : null}
       </div>
-      <div className="people-footer"></div>
     </React.Fragment>)
   }
 }
