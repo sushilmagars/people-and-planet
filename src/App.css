@@ -148,3 +148,7 @@
   border: 1px solid black;
   width: 25%;
 }
+
+.search-bar input {
+  font-size: 1.5vw;
+}
