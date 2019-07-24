@@ -16,7 +16,7 @@ function Planet({match}) {
 
   useEffect(() => {
     getPlanetInformation(planetId);
-  }, []);
+  }, [planetId]);
 
   return (<React.Fragment>
     <Header 
