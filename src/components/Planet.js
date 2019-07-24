@@ -1,5 +1,5 @@
 import React from 'react';
-import {getPlanetInformationUrl as baseUrl} from './../shared/constants';
+import {baseUrl} from './../shared/constants';
 import {useState, useEffect} from 'react';
 import Header from './Header';
 
@@ -9,7 +9,7 @@ function Planet({match}) {
   const [planet, setPlanet] = useState([]);
 
   const getPlanetInformation = async (planetId) => {
-    const planetInformation = await fetch(`${baseUrl}/${planetId}`);
+    const planetInformation = await fetch(`${baseUrl}/planets/${planetId}`);
     const planet = await planetInformation.json();
     setPlanet(planet);
   };

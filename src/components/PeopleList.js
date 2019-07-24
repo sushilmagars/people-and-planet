@@ -1,8 +1,7 @@
 import React from 'react';
 import PeopleInformation from './PeopleInformation';
 import Header from './Header';
-import Footer from './Footer';
-import {getAllPeopleUrl as GETPEOPLELISTURL} from './../shared/constants';
+import basUrl, { baseUrl } from './../shared/constants';
 
 class PeopleList extends React.Component {
   constructor() {
@@ -29,7 +28,7 @@ class PeopleList extends React.Component {
   }
 
   async componentDidMount() {
-    const getPeopleList = await fetch(GETPEOPLELISTURL);
+    const getPeopleList = await fetch(`${baseUrl}/people/`);
     const people = await getPeopleList.json();
     this.setState({list: people.results});
   }
