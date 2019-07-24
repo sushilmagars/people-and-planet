@@ -1,24 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PeopleList from './PeopleList';
 import Planet from './Planet';
 import Footer from './Footer';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
-class People extends Component {
-  constructor() {
-    super();
-  }
-
-  render() {
-    return (<React.Fragment>
-      <Router>
-        <Route path="/" exact component={PeopleList} />
-        <Route path="/people" component={PeopleList} />
-        <Route path="/planet/:planetId" component={Planet} />
-      </Router>
-      <Footer />
-    </React.Fragment>);
-  }
+function People() {
+  return (<React.Fragment>
+    <Router>
+      <Route path="/" exact component={PeopleList} />
+      <Route path="/people" component={PeopleList} />
+      <Route path="/planet/:planetId" component={Planet} />
+    </Router>
+    <Footer />
+  </React.Fragment>);
 }
 
 export default People;

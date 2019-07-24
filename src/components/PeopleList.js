@@ -1,7 +1,7 @@
 import React from 'react';
 import PeopleInformation from './PeopleInformation';
 import Header from './Header';
-import basUrl, { baseUrl } from './../shared/constants';
+import {baseUrl} from './../shared/constants';
 
 class PeopleList extends React.Component {
   constructor() {
